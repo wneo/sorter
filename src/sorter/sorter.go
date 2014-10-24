@@ -92,7 +92,7 @@ func writeValues(values []int, outfile string) error {
 
 	for _, value := range values {
 		str := strconv.Itoa(value)
-		file.WriteString(str)
+		file.WriteString(str + "\n")
 	}
 	return nil
 }

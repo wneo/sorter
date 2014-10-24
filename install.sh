@@ -44,7 +44,7 @@ export GOPATH="$OLDGOPATH"
 
  
 if $ENABLETEST ; then
-	#cd $SRCDIR
+	cd $SRCDIR
 	ALLTESTS=`find . -name "*_test.go"`
 	for f in $ALLTESTS  
 	do  
