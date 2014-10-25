@@ -40,7 +40,6 @@ if [[ $? -ne 0 ]]; then
 	echo "Error: cant install <$DIRNAME> !"
 	exit 1
 fi
-export GOPATH="$OLDGOPATH"
 
  
 if $ENABLETEST ; then
@@ -53,7 +52,6 @@ if $ENABLETEST ; then
 	    go test $TESTNAME
 	done 
 fi
-
 
 export GOPATH="$OLDGOPATH"
 
